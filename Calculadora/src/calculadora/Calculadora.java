@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 /**
  *
- * @author esther
  */
 public class Calculadora {
 
