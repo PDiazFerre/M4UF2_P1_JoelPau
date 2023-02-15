@@ -41,6 +41,7 @@ public class Calculadora {
                     
         //CODI QUE DEMANA INTRODUIR UN SIGNE PER REALITZAR LA OPERACIÓ
         
+        
             System.out.println();       //SALT DE LÍNIA
 
             do {
