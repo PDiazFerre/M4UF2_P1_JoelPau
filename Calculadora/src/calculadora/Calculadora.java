@@ -82,17 +82,17 @@ public class Calculadora {
                 switch (operacion) {
                     
                     case "+":
-                        res = n1 + n2;
+                        res=suma(n1, n2, res);
                         break;
                         
                     case "-":
-                        res = n1 - n2;
+                        res=resta(n1, n2, res);
                         break;
                         
                     case "x":
                         
                     case "X":
-                        res = n1 * n2;
+                        res =multiplicacion(n1, n2, res);
                         break;
                         
                     case "/":
@@ -108,11 +108,11 @@ public class Calculadora {
                             n2 = new Double(numero2);
                         }
                                                                  
-                        res = n1 / n2;
+                        res = division(n1, n2, res);
                         break;
                         
                     case "*":
-                        res = Math.pow(n1, n2);
+                        res = elevat(n1, n2, res);
                         break;
                         
                     case "%":
@@ -128,7 +128,7 @@ public class Calculadora {
                             n2 = new Double(numero2);
                             
                         }
-                        res = n1 % n2;
+                        res = residu(n1, n2, res);
                         break;
                 }
                 
@@ -162,6 +162,37 @@ public class Calculadora {
             } while (comprobar != true);
         } while (operacion.equals("s") || operacion.equals("S"));
     }
+    
+    static double suma(double n1, double n2, double res) {
+        res = n1+n2;
+        return res;
+    }
+    
+    static double resta (double n1, double n2, double res) {
+        res = n1-n2;
+        return res;
+    }
+    
+    static double multiplicacion (double n1, double n2, double res) {
+        res = n1*n2;
+        return res;
+    }
+    
+    static double division (double n1, double n2, double res) {
+        res = n1/n2;
+        return res;
+    }
+    
+    static double elevat (double n1, double n2, double res) {
+            res = Math.pow(n1, n2);
+            return res;
+    }
+    
+    static double residu (double n1, double n2, double res) {
+        res = n1%n2;
+        return res;
+    }
+    
 }
 
 
