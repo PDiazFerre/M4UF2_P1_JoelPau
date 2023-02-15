@@ -143,7 +143,7 @@ public class Calculadora {
                 
                 
                 
-            //IMPRESION DE RESULTADOS
+            //IMPRESSIÓ DE RESULTATS
             
             } while (comprobar != true);
 
@@ -155,7 +155,7 @@ public class Calculadora {
             System.out.println("[s/n]");
             
             
-            //CONTINUAR CON EL PROGRAMA O FINALIZAR
+            //CONTINUAR AMB EL PROGRAMA O FINALITZAR
             
             do {
                 comprobar = true;
