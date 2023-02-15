@@ -175,6 +175,8 @@ public class Calculadora {
         } while (operacion.equals("s") || operacion.equals("S"));
     }
     
+    //MÈTODES
+    
     static double suma(double n1, double n2, double res) {
         res = n1+n2;
         return res;
