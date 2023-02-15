@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 /**
  *
- * @author esther
  */
 public class Calculadora {
  
@@ -74,7 +73,7 @@ public class Calculadora {
                 comprobar = true;
                 switch (operacion) {
                     case "+":
-                        res = n2 + n2;
+                        res = n1 + n2;
                         break;
                     case "-":
                         res = n1 - n2;
@@ -96,7 +95,7 @@ public class Calculadora {
                         res = n1 / n2;
                         break;
                     case "*":
-                        res = Math.pow(n1, n1);
+                        res = Math.pow(n1, n2);
                         break;
                     case "%":
                         while (n2 == 0) {
