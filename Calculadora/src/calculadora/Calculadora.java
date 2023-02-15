@@ -11,8 +11,8 @@ import java.util.Scanner;
  * @author esther
  */
 public class Calculadora {
-
-    /**
+ 
+   /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -21,6 +21,9 @@ public class Calculadora {
         String operacion;
         boolean comprobar = false;
 
+        
+        //CODI QUE DEMANA INTRODUIR EL PRIMER NÚMERO
+        
         do {
 
             String numero1;
@@ -30,9 +33,15 @@ public class Calculadora {
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
+            
+            
+            
+        
+        
+        //CODI QUE DEMANA INTRODUIR UN SIGNE PER REALITZAR LA OPERACIÓ
 
             do {
-                System.out.println("\n OperaciÃ³? (Indica el signe)");
+                System.out.println("\n Operació? (Indica el signe)");
                 System.out.println("+ = sumar \n - = restar \n"
                         + " x = multiplicar \n / = dividir \n * = elevar primer num al segon num."
                         + "\n % = residu");
@@ -45,6 +54,10 @@ public class Calculadora {
                     comprobar = false;
                 }
             } while (comprobar != true);
+            
+            
+            //CODI QUE DEMANA INTRODUIR UN SEGON NÚMERO
+            
 
             String numero2;
             do {
@@ -53,6 +66,9 @@ public class Calculadora {
             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
             double nume2 = Double.parseDouble(numero2);
             double n2 = new Double(numero2);
+            
+            
+            //CODI QUE REALITZA LES OPERACIONS
 
             do {
                 comprobar = true;
@@ -95,6 +111,12 @@ public class Calculadora {
                         res = n1 % n2;
                         break;
                 }
+                
+                
+                
+                //CODI PER A SEGUIR AMB EL PROGRAMA O FINALITZAR-LO
+                
+                
             } while (comprobar != true);
 
             System.out.println("(" + numero1 + ") " + operacion + " (" + numero2 + ")" + " = " + res);
