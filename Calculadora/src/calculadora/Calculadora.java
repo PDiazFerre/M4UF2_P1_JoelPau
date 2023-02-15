@@ -11,9 +11,38 @@ import java.util.Scanner;
  */
 public class Calculadora {
 
-    /**
-     * @param args the command line arguments
-     */
+     //MÈTODES
+    
+    static double suma(double n1, double n2, double res) {
+        res = n1 + n2;
+        return res;
+    }
+
+    static double resta(double n1, double n2, double res) {
+        res = n1 - n2;
+        return res;
+    }
+
+    static double multiplicacion(double n1, double n2, double res) {
+        res = n1 * n2;
+        return res;
+    }
+
+    static double division(double n1, double n2, double res) {
+        res = n1 / n2;
+        return res;
+    }
+
+    static double elevat(double n1, double n2, double res) {
+        res = Math.pow(n1, n2);
+        return res;
+    }
+
+    static double residu(double n1, double n2, double res) {
+        res = n1 % n2;
+        return res;
+    }
+
     public static void main(String[] args) {
 
         //DECLARACIÓ DE VARIABLES
@@ -163,37 +192,4 @@ public class Calculadora {
             } while (comprobar != true);
         } while (operacion.equals("s") || operacion.equals("S"));
     }
-
-    //MÈTODES
-    
-    static double suma(double n1, double n2, double res) {
-        res = n1 + n2;
-        return res;
-    }
-
-    static double resta(double n1, double n2, double res) {
-        res = n1 - n2;
-        return res;
-    }
-
-    static double multiplicacion(double n1, double n2, double res) {
-        res = n1 * n2;
-        return res;
-    }
-
-    static double division(double n1, double n2, double res) {
-        res = n1 / n2;
-        return res;
-    }
-
-    static double elevat(double n1, double n2, double res) {
-        res = Math.pow(n1, n2);
-        return res;
-    }
-
-    static double residu(double n1, double n2, double res) {
-        res = n1 % n2;
-        return res;
-    }
-
 }
